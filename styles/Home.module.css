@@ -1,0 +1,194 @@
+@font-face {
+  font-family: 'BNazanin';
+  src: url('../assets/font/BNazanin.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BTitr';
+  src: url('../assets/font/BTitrBold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.Main {
+  width: 100dvw;
+  min-height: 100dvh;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  direction: rtl;
+  background-color: var(--back-main-color);
+  padding: 1rem 0;
+}
+.Container {
+  width: 90%;
+  max-width: 1380px;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--back-main-color);
+}
+
+.SiteTitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'BTitr', sans-serif;
+}
+.SiteTitle p {
+  font-size: 50px;
+}
+
+.Login {
+  width: 100%;
+  min-height: 75dvh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.LoginPic {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+}
+.LoginForm {
+  width: 48%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'BNazanin', sans-serif;
+}
+.LoginFormContainer {
+  width: 80%;
+  min-height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  background-color: var(--back-container-color);
+  border-radius: 15px;
+  padding: 150px 0;
+}
+.LoginForm div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Label {
+  width: 20%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.Input {
+  width: 60%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+}
+.Input:focus {
+  outline: none;
+  border: var(--border);
+}
+.Button {
+  width: 70%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--button-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.Button:hover {
+  border: var(--border);
+}
+
+.Image {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1280px) {
+  .Image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+  }
+  .LoginFormContainer {
+    width: 90%;
+    gap: 2rem;
+    padding: 70px 0;
+  }
+  .LoginPic {
+    width: 48%;
+  }
+  .LoginForm {
+    width: 48%;
+  }
+  .SiteTitle p {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 990px) {
+  .Login {
+    gap: 1rem;
+  }
+  .LoginPic {
+    width: 100%;
+  }
+  .LoginForm {
+    width: 100%;
+  }
+  .SiteTitle p {
+    font-size: 1.5rem;
+  }
+  .Image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+  }
+  .LoginFormContainer {
+    width: 90%;
+    gap: 2rem;
+    padding: 70px 0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .SiteTitle p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .SiteTitle p {
+    font-size: 1rem;
+  }
+  .LoginFormContainer {
+    width: 98%;
+    padding: 30px 0;
+  }
+  .Image {
+    width: 350px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .Label {
+    font-size: 1rem;
+  }
+}

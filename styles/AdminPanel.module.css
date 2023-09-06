@@ -1,0 +1,403 @@
+@font-face {
+  font-family: 'BNazanin';
+  src: url('../assets/font/BNazanin.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BTitr';
+  src: url('../assets/font/BTitrBold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.Main {
+  width: 100dvw;
+  min-height: 100dvh;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  direction: rtl;
+  background-color: var(--back-main-color);
+  padding: 1rem 0;
+}
+.Container {
+  width: 90%;
+  max-width: 1380px;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--back-main-color);
+}
+.SiteHeader {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-family: 'BTitr', sans-serif;
+  background-color: var(--back-container-color);
+  border-radius: 0 0 15px 15px;
+}
+.SiteHeader p {
+  font-size: 1.5rem;
+}
+
+.Image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.Menu {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: 'BTitr', sans-serif;
+  padding: 0 25px;
+}
+.Menu button {
+  width: 45%;
+  height: 70px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--button-color);
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'BTitr', sans-serif;
+  cursor: pointer;
+}
+.Menu button:hover {
+  border: var(--border);
+  cursor: pointer;
+  color: var(--border-color);
+}
+.MainDiv {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.MainDivContainer {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--back-container-color);
+  padding: 1.5rem 0;
+  border-radius: 15px;
+}
+
+.MainDivContainer div {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.Label {
+  width: 20%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'BNazanin', sans-serif;
+}
+.Input {
+  width: 60%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.Input:focus {
+  outline: none;
+  border: var(--border);
+}
+.Button {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--button-color);
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'BTitr', sans-serif;
+}
+.Button:hover {
+  border: var(--border);
+  cursor: pointer;
+  color: var(--border-color);
+}
+/* *************************** Update Section ************************************** */
+.updateSection {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: 'BTitr', sans-serif;
+  padding: 0 25px;
+}
+.updateSection div {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.updateSection input {
+  width: 18%;
+  height: 80%;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+}
+.updateSection input:focus {
+  outline: none;
+  border: var(--border);
+}
+.updateSection label {
+  width: 18%;
+  height: 50%;
+  text-align: center;
+  font-size: 1rem;
+}
+.updateSection button {
+  width: 10%;
+  height: 70%;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--button-color);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'BNazanin', sans-serif;
+}
+.updateSection button:hover {
+  border: var(--border);
+  cursor: pointer;
+  color: var(--border-color);
+}
+/* ************************************************************************* */
+
+/* *************************** Search Section ************************************** */
+.searchSection {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 25px;
+}
+.searchSection div {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.searchSection button {
+  width: 25%;
+  height: 70%;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--button-color);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'BNazanin', sans-serif;
+}
+.searchSection button:hover {
+  border: var(--border);
+  cursor: pointer;
+  color: var(--border-color);
+}
+
+.searchSection input {
+  width: 60%;
+  height: 80%;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+}
+.searchSection input:focus {
+  outline: none;
+  border: var(--border);
+}
+/* ************************************************************************* */
+
+.MembersContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--back-container-color);
+  padding: 1.5rem 5px;
+  border-radius: 15px;
+}
+.Table {
+  width: 100%;
+  font-family: 'BTitr', sans-serif;
+}
+.Table th {
+  background-color: var(--button-color);
+  border: var(--border);
+}
+.TableTd {
+  border: var(--border);
+  text-align: center;
+}
+.TableTr {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  .Label {
+    width: 30%;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .updateSection label {
+    font-size: 0.9rem;
+  }
+  .updateSection input {
+    font-size: 0.9rem;
+  }
+  .updateSection button {
+    font-size: 0.9rem;
+  }
+  .searchSection input {
+    font-size: 0.9rem;
+  }
+  .searchSection button {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .Label {
+    width: 30%;
+    font-size: 1.1rem;
+  }
+  .updateSection label {
+    font-size: 0.7rem;
+  }
+  .updateSection input {
+    font-size: 0.5rem;
+  }
+  .updateSection button {
+    font-size: 0.7rem;
+  }
+  .searchSection input {
+    font-size: 0.7rem;
+  }
+  .searchSection button {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .SiteHeader p {
+    font-size: 1rem;
+  }
+  .Menu {
+    justify-content: space-evenly;
+  }
+  .Menu button {
+    width: 40%;
+    height: 45px;
+    font-size: 1rem;
+  }
+  .MainDiv {
+    margin-top: 0.5rem;
+  }
+  .MainDivContainer {
+    width: 100%;
+    gap: 1.5rem;
+  }
+  .Label {
+    width: 35%;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .Input {
+    width: 65%;
+    font-size: 1rem;
+  }
+  .Button {
+    height: 45px;
+    font-size: 1rem;
+  }
+  .Table {
+    font-family: 'BNazanin', sans-serif;
+    font-size: 0.8rem;
+  }
+  .updateSection label {
+    font-size: 0.5rem;
+    height: 50%;
+  }
+  .updateSection button {
+    font-size: 0.7rem;
+  }
+  .updateSection input {
+    font-size: 0.5rem;
+    height: 50%;
+  }
+  .searchSection button {
+    width: 30%;
+    height: 50%;
+    font-size: 0.7rem;
+  }
+  .searchSection input {
+    width: 70%;
+    height: 50%;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .SiteHeader p {
+    font-size: 0.8rem;
+  }
+  .updateSection label {
+    font-size: 0.4rem;
+  }
+  .updateSection button {
+    font-size: 0.5rem;
+  }
+  .updateSection input {
+    font-size: 0.3rem;
+  }
+  .searchSection button {
+    font-size: 0.5rem;
+  }
+  .searchSection input {
+    font-size: 0.5rem;
+  }
+}
